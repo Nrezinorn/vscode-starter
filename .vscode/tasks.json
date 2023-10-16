@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+    {
+        "label": "Make Debug",
+        "type": "shell",
+        "group": "build",
+	// Windows you may need to add your MSYS_BIN PATH for make to work
+        "windows": { "command": "make -j 4" },
+	"mac": { "command": "make -j 4" },
+        "linux": { "command": "make -j 4" }
+    }]
+}
